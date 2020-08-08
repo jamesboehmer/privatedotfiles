@@ -1,0 +1,6 @@
+.aws/**/cli/**
+.aws/**/shell/**
+**/.DS_Store
+**/Package\ Control*
+!**/Package\ Control.sublime-settings
+**/oscrypto-ca-bundle.crt

@@ -1,0 +1,11 @@
+[user]
+	name = My Name Here
+	email = me@work.com
+	signingkey = MYWORKGPGKEY8BBF5E5A750B82B5BD1353E84
+[core]
+	# use a non-default SSH key for pushing to github
+	sshCommand = "ssh -i ${HOME}/.ssh/id_rsa_work"
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true

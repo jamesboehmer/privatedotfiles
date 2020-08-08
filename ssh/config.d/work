@@ -1,0 +1,14 @@
+Host work-bastion-host-1
+  Hostname 1.123.4.321
+  ServerAliveInterval 15
+  ServerAliveCountMax 3
+  AddressFamily inet
+  Port 22
+  User bastionuser
+
+
+Host work-server-* 10.0.*
+  User myusername
+  IdentityFile ~/.ssh/id_rsa_work
+  ProxyCommand ssh -o 'ForwardAgent yes' work-bastion-host-1 nc -w 30 %h %p
+

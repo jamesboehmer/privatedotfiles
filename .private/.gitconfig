@@ -1,0 +1,17 @@
+[user]
+	name = My Name Here
+	email = mypersonalemail@mydomain.com
+	signingkey = MYPERSONALGPGKEY1DEAC70C116CF1F9C20A
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
+
+# for use with the "hub" CLI tool
+[github]
+	user = mypersonalgithubusername
+	token = mypersonalgithubtoken
+
+# load a gitconfig specific to work if you're in the work directory
+[includeIf "gitdir:**/work/**"]
+	path = ~/.private/.work.gitconfig

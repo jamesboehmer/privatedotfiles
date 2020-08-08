@@ -1,0 +1,1 @@
+alias foo='echo "All *rc files in this directory will be sourced by bashrc'
